@@ -8,7 +8,9 @@
 
 body{
     background-color: #212121;
-    font-weight: bold;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
 }
 
 .container{
