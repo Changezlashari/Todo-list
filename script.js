@@ -14,13 +14,13 @@ function addTask() {
 
     }
     inputBox.value = "";
-    saveData()
+    saveData();
 }
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-        saveData()
+        saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
@@ -33,6 +33,6 @@ function saveData(){
 }
 
 function showTask(){
-    listContainer.innerHTML = localStorage.getItem("data")
+    listContainer.innerHTML = localStorage.getItem("data");
 }
-showTask()
+showTask();
